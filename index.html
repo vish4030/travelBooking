@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div class="row header-top">
+            <div class="col-5 col-t-2 col-mh-2">
+              <ul class="flex gap">
+                <li>
+                  <a href="+917600000000"
+                    ><span class="fa fa-phone"></span
+                    ><span class="text t-d-none">+917600000000</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:vishwajeet@travel.com"
+                    ><span class="fa fa-envelope"></span
+                    ><span class="text t-d-none">vishwajeet@travel.com</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 col-t-5 col-mh-8">
+              <ul class="social-link">
+                <li>
+                  <a href=""><span class="fa fa-facebook"></span></a>
+                </li>
+                <li>
+                  <a href=""><span class="fa fa-google-plus"></span></a>
+                </li>
+                <li>
+                  <a href=""><span class="fa fa-wikipedia-w"></span></a>
+                </li>
+                <li>
+                  <a href=""><span class="fa fa-youtube"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 col-t-4 col-mh-2">
+              <ul class="flex sign-in-up">
+                <li id="login-click">
+                    <span class="fa fa-user"></span>
+                    <span class="text mh-d-none">Login</span>
+                </li>
+                <li id="register-click">
+                    <span class="fa fa-key"></span>
+                    <span class="text mh-d-none">Sign Up</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row header-bottom">
+            <div class="col-4">
+              <h1>Exploore</h1>
+              <p>CREATIVE TAGLINE HERE</p>
+            </div>
+            <div class="col-8">
+              <label for="menu" class="btn">
+                <span></span><span></span><span></span>
+              </label>
+              <input type="checkbox" id="menu" />
+              <div class="collapse">
+                <ul class="flex align-center">
+                  <li><a href="#header">HOME</a></li>
+                  <li><a href="#destination">DESTINATION</a></li>
+                  <li><a href="#discount">DISCOUNT</a></li>
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#blog">BLOG</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="container-login" id="login">
+     
+      <form>
+        <h2>Login form</h2>
+          <table>
+              <tbody>
+                  <tr>
+                      <td><label for="email">Email:</label></td>
+                      <td><input type="email" id="email" autocomplete="on" name="email"><span></span></td>
+                  </tr>
+                  <tr>
+                      <td><label for="password">Password:</label></td>
+                      <td><input type="password" id="password" autocomplete="off" name="password"><span></span></td>
+                  </tr>
+              </tbody>
+          </table>
+          <button id="login-btn"  class="btn">Login</button>
+        </form>
+      </div>
+    <div class="container-register" id="register">
+        <form >
+          <h2>Registration form</h2>
+          <table>
+              <tbody>
+                <tr>
+                  <td><label for="fname">Name:</label></td>
+                  <td><input type="text" id="fname" autocomplete="on" name="fname"><span></span></td>
+                </tr>
+                <tr>
+                  <td><label for="age">Age:</label></td>
+                  <td><input type="age" id="age" autocomplete="on" name="age"><span></span></td>
+              </tr>
+                <tr>
+                      <td><label for="email_r">Email:</label></td>
+                      <td><input type="email" id="email_r" autocomplete="on" name="email_r"><span></span></td>
+                  </tr>
+                  <tr>
+                      <td><label for="password_r">Password:</label></td>
+                      <td><input type="password" id="password_r" autocomplete="on" name="password_r"><span></span></td>
+                  </tr>
+              </tbody>
+          </table>
+          <button id="res-btn"  class="btn">Register</button>
+        </form>
+    </div>
+    <section class="banner" role="banner" id="header">
+        <div class="banner-content">
+          <h2>Start Your Greatest </h2>
+          <small>ADVENTURE WITH US!</small>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+            accusantium esse nulla vel pariatur ut temporibus error inventore,
+            aliquam id.
+          </p>
+          <button class="btn">CLICK HERE</button>
+        </div>
+    </section>
+    <section class="wrap-2">
+      <div class="container">
+        <h2>FINDS HOTELS</h2>
+        <form action="./hotels.html" method="post" target="_blank">
+          <div class="row">
+            <div class="col-7 col-mh-12">
+              <div class="row find-hotel">
+                <div class="col-4">
+                  <label for="loc">Where?</label>
+                  <input type="text" name="loc" placeholder="Location" />
+                </div>
+                <div class="col-4">
+                  <label for="date_s">Check-in</label>
+                  <input type="date" name="date_s" />
+                </div>
+                <div class="col-4">
+                  <label for="date_e">Check-out</label>
+                  <input type="date" name="date_e" />
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-mh-12">
+              <div class="row">
+                <div class="col-4">
+                  <label for="adult">Adult</label>
+                  <input type="number" name="adult" id="adult" placeholder="01" />
+                </div>
+                <div class="col-4">
+                  <label for="child">Child</label>
+                  <input type="number" name="child" id="child" placeholder="00" />
+                </div>
+                <div class="col-4">
+                  <button type="submit" class="btn" >CLICK HERE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="about" class="wrap-3">
+      <div class="flex">
+        <div class="img">
+          <img
+            class="img-res"
+            src="./images/wrap-3.webp"
+            alt="wrap-3"
+            width="800"
+            height="612"
+          />
+        </div>
+        <div class="content">
+          <h2>Trusted Since 2001</h2>
+          <small>We are Exploore</small>
+          <p class="ptop">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            natus, porro blanditiis molestias dolorum dicta aliquam.
+          </p>
+          <ul class="flex">
+            <li><span class="fa fa-check-circle-o"></span></li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+          <ul class="flex">
+            <li><span class="fa fa-check-circle-o"></span></li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+          <ul class="flex">
+            <li><span class="fa fa-check-circle-o"></span></li>
+            <li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="wrap-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 wrap-4-head">
+            <h2>
+              Our Best Services <br />
+              <small>We are Travel Agents</small>
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-plane"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-train"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-bank"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-bicycle"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-cutlery"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-eye"></span></li>
+                  <li>
+                    <h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap-5">
+      <div class="container">
+        <div class="row justify-space-bet">
+          <div class="col-12">
+            <h2>
+              Trusted Since 2001 <br />
+              <small>We are Travel Agents</small>
+            </h2>
+          </div>
+          <div class="col-4 col-mp-12 box">
+            <span class="fa fa-car"></span>
+            <h3>Low Budget Trip</h3>
+            <p>$800</p>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor sit</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>sit amet consectetur.</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor</p></li>
+            </ul>
+          </div>
+          <div class="col-4 col-mp-12 box mp-d-none">
+            <span class="fa fa-train"></span>
+            <h3>Low Budget Trip</h3>
+            <p>$800</p>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor sit</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>sit amet consectetur.</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor</p></li>
+            </ul>
+          </div>
+          <div class="col-4 col-mp-12 box mp-d-none">
+            <span class="fa fa-plane"></span>
+            <h3>Low Budget Trip</h3>
+            <p>$1000</p>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor sit</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>sit amet consectetur.</p></li>
+            </ul>
+            <ul class="flex">
+              <li><span class="fa fa-check-circle-o"></span></li>
+              <li><p>Lorem ipsum dolor</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog"  class="wrap-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-t-12">
+            <img
+              class="img-res"
+              src="./images/wrap-6.webp"
+              alt="wrap-6"
+              width="417"
+              height="546"
+            />
+          </div>
+          <div class="col-8 col-t-12 wrap6-content">
+            <h2>
+              Trusted Since 2001 <br />
+              <small>We are Travel Agents</small>
+            </h2>
+            <ul class="flex">
+              <li>
+                <span class="fa fa-plane"></span>
+                <a href="">Flight</a>
+              </li>
+              <li>
+                <span class="fa fa-car"></span>
+                <a href="">Cab</a>
+              </li>
+              <li>
+                <span class="fa fa-bank"></span>
+                <a href="">Hotel</a>
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+              neque possimus consequatur esse id quod itaque cumque atque! Cum,
+              reprehenderit. Numquam nobis nostrum eaque, earum temporibus error
+              a, rerum totam excepturi, praesentium ullam quasi? Iste nulla
+              dolorum, atque mollitia consequatur facilis amet quas qui
+              obcaecati, dolor, et natus nesciunt autem?
+            </p>
+            <button class="btn">CLICK HERE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section  id="discount" class="wrap-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>
+              Pack and Go <br />
+              <small>Awesome Tours</small>
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="row packages">
+              <div class="col-4 col-mp-12 mp-d-none package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="390"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+              <div class="col-4 col-mp-12 package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="373"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+              <div class="col-4 col-mp-12 mp-d-none package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="373"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="destination" class="wrap-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>
+              Trusted Since 2001 <br />
+              <small>Awesome Tours</small>
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4 col-mp-12 blog-post">
+                <img
+                  class="img-res"
+                  src="./images/blog-1.webp"
+                  alt="blog-1"
+                  width="384"
+                  height="258"
+                />
+                <div class="blog-post-content">
+                  <h3>Lorem, ipsum dolor</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button class="btn">CLICK HERE</button>
+                </div>
+              </div>
+              <div class="col-4 col-mp-12 mp-d-none blog-post">
+                <img
+                  class="img-res"
+                  src="./images/blog-2.webp"
+                  alt="blog-2"
+                  width="384"
+                  height="258"
+                />
+                <div class="blog-post-content">
+                  <h3>Lorem, ipsum dolor</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button class="btn">CLICK HERE</button>
+                </div>
+              </div>
+              <div class="col-4 col-mp-12 mp-d-none blog-post">
+                <img
+                  class="img-res"
+                  src="./images/blog-3.webp"
+                  alt="blog-3"
+                  width="384"
+                  height="258"
+                />
+                <div class="blog-post-content">
+                  <h3>Lorem, ipsum dolor</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button class="btn">CLICK HERE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-t-4"></div>
+          <div class="col-6 col-mp-12">
+            <div class="wrap-9card">
+              <h2>New York + Paris</h2>
+              <small>7 Day + 6 Night</small>
+              <ul class="flex justify-space-bet">
+                <li><span class="fa fa-plane"></span></li>
+                <li><span class="fa fa-bank"></span></li>
+                <li><span class="fa fa-car"></span></li>
+              </ul>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Adipisc voluptate nobis quis vero unde soluta?
+              </p>
+              <div class="row justify-space-bet">
+                <div class="col-6"><b>$1000</b></div>
+                <div class="co-6"><button class="btn">Book Now</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section  class="wrap-10">
+      <div class="container">
+        <h2>
+          Customer Reviews <br />
+          <small>We are Travel Agents</small>
+        </h2>
+        <div class="reviews">
+          <div class="review_item">
+            <blockquote>
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                sit, libero sunt quas minus quos quisquam officia, deserunt
+                veritatis a, asperiores odio 
+              </q>
+            </blockquote>
+            <span class="fa fa-star"></span><span class="fa fa-star"></span>
+            <span class="fa fa-star"></span><span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <div class="row reviewer">
+              <div class="col-6 review-img">
+                <img
+                  src="./images/review-1.jpg"
+                  alt="John Smith"
+                  width="69"
+                  height="69"
+                />
+              </div>
+              <div class="col-6 img-name">
+                <h3>
+                  John Smith <br />
+                  <small>Solo Traveller</small>
+                </h3>
+              </div>
+            </div>
+         </div>
+         <div class="review_item">
+          <blockquote>
+            <q>
+             Impedi  sit, libero sunt quas minus quos quisquam officia, deserunt
+              veritatis a, asperiores odio quam veniam blanditiis tempora velit
+              explicabo id eaque excepturi et. Ratione, sit quos?
+            </q>
+          </blockquote>
+          <span class="fa fa-star"></span><span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <div class="row reviewer">
+            <div class="col-6 review-img">
+              <img
+                src="./images/review-2.jpg"
+                alt="John Smith"
+                width="69"
+                height="69"
+              />
+            </div>
+            <div class="col-6 img-name">
+              <h3>
+                John Smith-1 <br />
+                <small>Solo Traveller</small>
+              </h3>
+            </div>
+          </div>
+         </div>
+         <div class="review_item">
+        <blockquote>
+          <q>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            sit, libero sunt quas minus quos quisquam officia, deserunt
+            veritatis a, asperiores odio quam veniam blanditiis tempora velit
+            explicabo id eaque excepturi et. Ratione, sit quos?
+          </q>
+        </blockquote>
+        <span class="fa fa-star"></span><span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <div class="row reviewer">
+          <div class="col-6 review-img">
+            <img
+              src="./images/review-3.jpg"
+              alt="John Smith"
+              width="69"
+              height="69"
+            />
+          </div>
+          <div class="col-6 img-name">
+            <h3>
+              John Smith-2 <br />
+              <small>Solo Traveller</small>
+            </h3>
+          </div>
+        </div>
+         </div>
+         <div class="review_item">
+      <blockquote>
+        <q>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          sit, libero sunt quas minus quos quisquam officia, deserunt
+          veritatis a, asperiores odio quam veniam blanditiis tempora velit
+          explicabo id eaque excepturi et. 
+        </q>
+      </blockquote>
+      <span class="fa fa-star"></span><span class="fa fa-star"></span>
+      <span class="fa fa-star"></span><span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <div class="row reviewer">
+        <div class="col-6 review-img">
+          <img
+            src="./images/review-4.jpg"
+            alt="John Smith"
+            width="69"
+            height="69"
+          />
+        </div>
+        <div class="col-6 img-name">
+          <h3>
+            John Smith-3 <br />
+            <small>Solo Traveller</small>
+          </h3>
+        </div>
+      </div>
+         </div>
+         <div class="review_item">
+    <blockquote>
+      <q>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+        sit, libero sunt quas minus quos quisquam officia, deserunt
+        veritatis a, asperiores odio quam veniam blanditiis tempora velit
+        explicabo id eaque excepturi et. Ratione, sit quos?
+      </q>
+    </blockquote>
+    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+    <div class="row reviewer">
+      <div class="col-6 review-img">
+        <img
+          src="./images/review-5.jpg"
+          alt="John Smith"
+          width="69"
+          height="69"
+        />
+      </div>
+      <div class="col-6 img-name">
+        <h3>
+          John Smith-4 <br />
+          <small>Solo Traveller</small>
+        </h3>
+      </div>
+    </div>
+         </div>
+        </div> 
+        <button id="preBtn" onclick="prevReview()"><span class="fa fa-arrow-left"></span></button>
+        <button id="nextBtn" onclick="nextReview()"><span class="fa fa-arrow-right"></span></button>
+      </div>
+    </section>
+    <footer id="contact" class="wrap-11">
+      <div class="top">
+        <div class="top-header">
+          <h2>Start Your Journey</h2>
+          <p><a href="">Contact us</a></p>
+          <span class="fa fa-map-marker"></span>
+        </div>
+        <div class="container middle">
+          <div class="row top">
+            <div class="col-4 col-mp-12 justify-space-bet">
+              <ul class="flex ul-top">
+                <li><span class="fa fa-envelope"></span></li>
+                <li>
+                  <h3>EMAIL</h3>
+                  <small>mymail@gmail.com</small>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 col-mp-12 justify-space-bet">
+              <ul class="flex ul-top">
+                <li><span class="fa fa-mobile"></span></li>
+                <li>
+                  <h3>CALL US!</h3>
+                  <small>+91 7600000000</small>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 col-mp-12 justify-space-bet">
+              <ul class="flex ul-top">
+                <li><span class="fa fa-map-marker"></span></li>
+                <li>
+                  <h3>ADDRESS</h3>
+                  <small>New Delhi</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="flex justify-space-bet ul-bottom">
+            <li><span class="fa fa-facebook"></span></li>
+            <li><span class="fa fa-google-plus"></span></li>
+            <li><span class="fa fa-wikipedia-w"></span></li>
+            <li><span class="fa fa-youtube"></span></li>
+            <li><span class="fa fa-linkedin"></span></li>
+            <li><span class="fa fa-digg"></span></li>
+            <li><span class="fa fa-instagram"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Designed by: vishwajeet kumar</p>
+        <p>&copy; Copyright 2024, All Right Reserved</p>
+      </div>
+    </footer>
+     <script src="./js/main.js" type="text/javascript" defer></script>
+  </body>
+</html>
