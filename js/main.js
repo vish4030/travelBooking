@@ -1,4 +1,7 @@
-
+function handleClick(event) {
+    let menu = document.getElementById("menu");
+    menu.checked = false;
+  }
 
 const formValidation = (name, value)=>{
     switch(name){
@@ -47,14 +50,12 @@ const formValidation = (name, value)=>{
     }
 }
 
-document.querySelector("form").addEventListener("submit", onSubmit);
-
 
 // Function to handle form submission
-function onSubmit(e) {
-    e.preventDefault();
+function onSubmit(event) {
+    event.preventDefault();
+    const form = document.getElementById("form1");
 
-    const form = document.querySelector("form");
     if(form.loc.value.trim() == "") {alert("Enter Location"); form.loc.focus(); return;}
     else{!formValidation('loc', form.loc.value) && alert("enter Valid Location");}
 
@@ -143,7 +144,7 @@ function carousel(review){
      password.value = "";
      document.getElementById('register').style.display="none";
    }
-
-
+   
+  
    
  })

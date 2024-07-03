@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Booking</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -13,8 +14,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <header>
+  <body >
+    <header >
         <div class="container">
           <div class="row header-top">
             <div class="col-5 col-t-2 col-mh-2">
@@ -71,8 +72,8 @@
               <label for="menu" class="btn">
                 <span></span><span></span><span></span>
               </label>
-              <input type="checkbox" id="menu" />
-              <div class="collapse">
+              <input type="checkbox" id="menu"/>
+              <div class="collapse" id="collapse" onclick="handleClick(event);" >
                 <ul class="flex align-center">
                   <li><a href="#header">HOME</a></li>
                   <li><a href="#destination">DESTINATION</a></li>
@@ -146,21 +147,21 @@
     <section class="wrap-2">
       <div class="container">
         <h2>FINDS HOTELS</h2>
-        <form action="./hotels.html" method="post" target="_blank">
+        <form  method="post" id="form1" onsubmit="onSubmit(event)">
           <div class="row">
             <div class="col-7 col-mh-12">
               <div class="row find-hotel">
                 <div class="col-4">
                   <label for="loc">Where?</label>
-                  <input type="text" name="loc" placeholder="Location" />
+                  <input type="text" name="loc" id="loc" placeholder="Location" />
                 </div>
                 <div class="col-4">
                   <label for="date_s">Check-in</label>
-                  <input type="date" name="date_s" />
+                  <input type="date" name="date_s" id="date_s" />
                 </div>
                 <div class="col-4">
                   <label for="date_e">Check-out</label>
-                  <input type="date" name="date_e" />
+                  <input type="date" name="date_e" id="date_e"/>
                 </div>
               </div>
             </div>
