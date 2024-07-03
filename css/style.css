@@ -74,6 +74,8 @@ header .header-top{border-bottom: 3px solid #c2c2c2; padding-bottom: 1rem;}
 span.fa{font-size: 20px;  color: var(--yellow);}
 
 .header-bottom{padding-top: 1rem;}
+.header-bottom h1{font-size: 3rem; font-weight: 600;}
+.header-bottom p{font: 1.5rem; font-weight: 400; margin-bottom: 1rem;}
 .header-bottom li{margin: 0 10px; font: 400 16.3px var(--ff); }
 .header-bottom a{display: block; padding: 1rem 10px 2rem 10px;border-bottom:5px solid #0000;}
 .header-bottom a:hover {border-bottom:5px solid var(--yellow);}
@@ -302,9 +304,10 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
     .col-mh-11{flex-basis: 91.66%; max-width: 91.66%;}
     .col-mh-12{flex-basis: 100%; max-width: 100%;}
     .mh-d-none{display: none !important;}
-    
 
-
+    .header-bottom h1{font-size: 2rem; font-weight: 600;}
+    .header-bottom p{font-size: 1rem; font-weight: 400; margin-bottom: 1rem;}
+    label[for="menu"] span{height: 5px; width: 3.5rem; margin-bottom: 3px;}
 
 }
 /* Mobile Portrait */
@@ -327,9 +330,9 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
 
     .header-top .social-link{gap: 1rem; margin-left: 40px;}
     .header-bottom p{font-size: 10px;}
-
+   
     
-    .banner{min-height: 70vh;}
+    .banner{min-height: 50vh;}
     .banner-content{top: 65%;}
     .banner h2{font-size:1.5rem ; line-height: 30px; }
     .banner small{font-size: 1.2rem; line-height: 20px;}
